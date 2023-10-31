@@ -296,3 +296,187 @@ a {
 .hero__btn-desc:hover {
     opacity: 0.8;
 }
+
+/* ================== About Us ================= */
+.about {
+    padding-top: 38px;
+    background: #fffaf5;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 0;
+}
+
+.about__content {
+    max-width: 40%;
+}
+
+.about__sub-title {
+    display: block;
+    margin-top: 76px;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.about__heading {
+    margin-top: 15px;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.2rem;
+    color: var(--heading-color);
+}
+
+.about__desc {
+    margin-top: 24px;
+    color: #656689;
+    font-weight: 400;
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+
+/* === Checkbox === */
+.about__checkbox-wrap {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    white-space: nowrap;
+}
+
+.about__form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.about__checkbox > label {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: left;
+    color: #48496a;
+}
+
+.about__checkbox > label:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.about__checkbox > label::before,
+.about__checkbox > label::after {
+    content: "";
+    display: inline-block;
+}
+
+.about__checkbox > label::before {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.2);
+}
+
+.about__checkbox [type="checkbox"]:checked ~ label::before {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.about__checkbox [type="checkbox"]:checked ~ label::after {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+
+    width: 12px;
+    height: 8px;
+
+    rotate: -45deg;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.about__images {
+    position: relative;
+    height: 558px;
+    flex: 1;
+}
+
+.about__images::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    z-index: 2;
+
+    bottom: 0;
+    right: 0;
+
+    width: 494px;
+    height: 336px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    box-shadow: 11px 18px 65px 0px #ff9b791f;
+}
+
+.about__img-hero {
+    position: absolute;
+    z-index: 3;
+    margin-top: 6px;
+
+    bottom: 0;
+    right: 24px;
+}
+
+.about__img-decor {
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    right: -52px;
+}
+
+.about__exp {
+    z-index: 4;
+    position: absolute;
+    bottom: 238px;
+    right: 454px;
+
+    padding: 30px 26px;
+    width: 136px;
+    min-height: 156px;
+    border-radius: 10px;
+
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px #55f0ff2b;
+}
+
+.about__exp-decor {
+    position: absolute;
+    top: -40px;
+    right: -34px;
+}
+
+.about__exp-heading {
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about__exp-desc {
+    display: inline-block;
+    color: #c6f4f9;
+    margin-top: 14px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+}
